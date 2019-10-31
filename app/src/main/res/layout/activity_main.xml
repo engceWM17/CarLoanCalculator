@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextCarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/carPrice"
+        android:inputType="numberDecimal"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextDownPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/DownPayment"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editLoanPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/LoanPeriod"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextIRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/Interestrate"
+        android:inputType="number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/Loan"
+        style="@style/output"
+        android:hint="@string/Loan" />
+
+    <TextView
+        android:id="@+id/Interest"
+        style="@style/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Interest" />
+
+    <TextView
+        android:id="@+id/MPayment"
+        style="@style/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/MonRepay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cal" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="resetInput"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+    </LinearLayout>
+    </LinearLayout>
